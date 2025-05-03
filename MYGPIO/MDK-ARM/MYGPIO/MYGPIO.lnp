@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"mygpio\startup_stm32f407xx.o"
+"mygpio\main.o"
+"mygpio\stm32f4xx_it.o"
+"mygpio\stm32f4xx_hal_msp.o"
+"mygpio\stm32f4xx_hal_rcc.o"
+"mygpio\stm32f4xx_hal_rcc_ex.o"
+"mygpio\stm32f4xx_hal_flash.o"
+"mygpio\stm32f4xx_hal_flash_ex.o"
+"mygpio\stm32f4xx_hal_flash_ramfunc.o"
+"mygpio\stm32f4xx_hal_gpio.o"
+"mygpio\stm32f4xx_hal_dma_ex.o"
+"mygpio\stm32f4xx_hal_dma.o"
+"mygpio\stm32f4xx_hal_pwr.o"
+"mygpio\stm32f4xx_hal_pwr_ex.o"
+"mygpio\stm32f4xx_hal_cortex.o"
+"mygpio\stm32f4xx_hal.o"
+"mygpio\stm32f4xx_hal_exti.o"
+"mygpio\system_stm32f4xx.o"
+--strict --scatter "MYGPIO\MYGPIO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MYGPIO.map" -o MYGPIO\MYGPIO.axf
